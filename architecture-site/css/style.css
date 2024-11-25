@@ -130,6 +130,134 @@ body {
   gap: 37px;
   margin-top: 25px;
 }
-.social img {
-  width: 80%;
+.social img:hover {
+  transform: scale(1.2);
+}
+
+.services {
+  background-color: #fff;
+  padding: 90px 20% 110px 20%;
+}
+
+.title-wrap {
+  width: 100%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-wrap__title {
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0;
+}
+.title-wrap__desc {
+  color: rgb(255, 0, 0);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: end;
+  width: 28%;
+}
+
+.service-cards {
+  color: black;
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-cards .card {
+  width: 30%;
+  min-height: 100%;
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+}
+.service-cards .card__img {
+  min-height: 45px;
+}
+.service-cards .card__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  flex-grow: 1;
+  min-height: 75px;
+}
+.service-cards .card__desc {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: auto;
+  flex-grow: 1;
+}
+.service-cards .card__link {
+  font-weight: 700;
+  font-size: 16px;
+}
+.service-cards .card__link a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  gap: 15px;
+}
+.service-cards .card__link a:hover {
+  gap: 20px;
+}
+
+.about {
+  background-color: #fff;
+  padding: 0 20% 110px 20%;
+}
+.about .title-wrap__desc {
+  text-align: start;
+}
+
+.about-content-wrap .description {
+  color: black;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.about-cards {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-cards .card {
+  color: black;
+  width: 30%;
+}
+.about-cards .card__staff-img {
+  position: relative;
+}
+.about-cards .card__staff-img .staff-prop {
+  padding: 15px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.about-cards .card__staff-img .staff-prop .staff-specialization {
+  color: rgb(255, 0, 0);
+  font-size: 16px;
+  line-height: 19px;
+}
+.about-cards .card__staff-img .staff-prop .staff-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.about-cards .card__staff-desc {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 24px;
 }/*# sourceMappingURL=style.css.map */
