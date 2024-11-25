@@ -1,3 +1,5 @@
+$red: rgba(255, 0, 0, 1);
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -12,14 +14,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 a {
-  font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
 body {
@@ -45,10 +41,15 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 50px;
+
+  & .phone-number{
+    margin-bottom: 9px;
+  }
+
 }
 
 .navigation{
-  margin-right: 205px;
+  margin-right: 10%;
 
   &__nav-list{
     display: flex;
@@ -60,7 +61,94 @@ body {
   }
 
   &__item-link{
+    position: relative;
     color: rgba(255, 255, 255, 1);
+    padding: 5px 0;
+    
+    &:after{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: $red;
+      bottom: 0;
+      left: 0;
+      transform: scaleX(0);
+    }
+
+    &:hover:after{
+      transition: .3s;
+      transform: scaleX(0.5);
+    }
+  }
+}
+
+.active{
+  &:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $red;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0.5);
+  }
+}
+
+.wrapper{
+  margin-top: 100px;
+  padding: 0 20%;
+
+  &__subtitle{
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__title{
+    margin: 0;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 79px;
+    margin-bottom: 35px;
+  }
+
+  &__title-links{
+    display: flex;
+
+    & .first-link,
+      .second-link{
+      color: rgba(255, 255, 255, 1);
+      width: 30%;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover{
+        gap: 10px;
+      }
+    }
+
+    & img{
+      margin-left: 25px;
+      height: 60%;
+    }
+  }
+}
+
+.social{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 27px;
+  right: 2%;
+  gap: 37px;
+  margin-top: 25px;
+
+  & img{
+    width: 80%;
   }
 }
 
