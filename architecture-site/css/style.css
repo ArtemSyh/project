@@ -260,4 +260,102 @@ body {
   margin-top: 30px;
   font-size: 20px;
   line-height: 24px;
+}
+
+.reviews {
+  background-color: #fff;
+  padding: 0 20% 110px 20%;
+}
+.reviews .reviews-desc {
+  width: 40%;
+}
+
+.slider {
+  margin-top: 50px;
+  height: 464px;
+}
+.slider__frame {
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+}
+.slider__slide-wrap {
+  min-width: 100%;
+  display: none;
+}
+.slider__slider-content {
+  height: 98%;
+  display: flex;
+}
+.slider__comment {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+  padding: 0 40px;
+  color: black;
+  border: 1px solid rgb(200, 200, 200);
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.25);
+  margin-left: 20px;
+}
+.slider__slider-navigation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.block {
+  display: block;
+}
+
+.slider-nav__nav-marks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 15px;
+}
+.slider-nav__mark {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.slider-nav__arrow-right {
+  transform: rotate(180deg);
+}
+
+.slider-mark-active {
+  width: 20px;
+  height: 10px;
+  background-color: rgb(255, 0, 0);
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.slider .card {
+  width: 32%;
+}
+
+.slider .card__client-img {
+  position: relative;
+}
+
+.slider .client-prop {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  padding: 5px 15px 5px 50px;
+  background-color: white;
+  color: black;
+  text-align: end;
+}
+.slider .client-prop .client-name {
+  font-weight: 700;
+  font-size: 20px;
+}
+.slider .client-prop .client-specialization {
+  font-size: 16px;
+  color: rgb(255, 0, 0);
 }/*# sourceMappingURL=style.css.map */
