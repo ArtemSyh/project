@@ -358,4 +358,132 @@ body {
 .slider .client-prop .client-specialization {
   font-size: 16px;
   color: rgb(255, 0, 0);
+}
+
+.contacts {
+  background-color: #fff;
+}
+.contacts .title-wrap {
+  padding: 0 20% 67px 20%;
+  width: auto;
+}
+.contacts .title-wrap__desc {
+  text-align: start;
+}
+
+.bg-map {
+  position: relative;
+  background-image: url(/images/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.contact-block {
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translate(-50%, -50%);
+  width: 520px;
+  height: 280px;
+  background-color: #fff;
+  color: black;
+  padding: 35px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.adress__title {
+  color: rgb(255, 0, 0);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.adress__content {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.phone-number__title {
+  color: rgb(255, 0, 0);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.phone-number__content {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.contact-links a:hover {
+  transform: scale(1.1);
+}
+
+.detail {
+  color: rgb(255, 0, 0);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.detail:hover {
+  gap: 25px;
+}
+
+.page-footing {
+  background-color: #fff;
+  padding: 50px 4%;
+}
+
+.footer__bottom {
+  margin-top: 50px;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left-bar {
+  color: rgba(0, 0, 0, 0.5);
+  width: 40%;
+}
+.footer-left-bar__logo-full-name {
+  margin-bottom: 10px;
+}
+.footer-left-bar__adress {
+  margin-bottom: 10px;
+}
+.footer-left-bar__links svg:not(:last-child) {
+  margin-right: 35px;
+}
+
+.footer-right-bar {
+  color: black;
+  display: flex;
+  gap: 170px;
+}
+.footer-right-bar__title {
+  color: rgb(255, 0, 0);
+  margin-bottom: 10px;
+}
+.footer-right-bar__content {
+  display: flex;
+  flex-direction: column;
+}
+.footer-right-bar__content a {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+.footer-right-bar__content a:hover {
+  color: rgb(0, 0, 0);
 }/*# sourceMappingURL=style.css.map */
